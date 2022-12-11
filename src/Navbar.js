@@ -1,5 +1,5 @@
-import React,{useState,useEffect,useRef} from 'react'
-import {FaBars, FaTwitter} from 'react-icons/fa';
+import React,{useState} from 'react'
+import {FaBars} from 'react-icons/fa';
 import{links,social} from './data'
 import logo from './logo.svg';
 import './App.css';
@@ -10,7 +10,7 @@ function Navbar() {
     <nav>
         <div className="nav-center">
             <div className="nav-header">
-              <img src={logo} />
+              <img src={logo} alt={"hello"}/>
               <button className="nav-toggle" onClick={()=> setShow(!show)}>
                 <FaBars/>
               </button>
